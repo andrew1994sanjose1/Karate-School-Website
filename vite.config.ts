@@ -6,13 +6,17 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      // Pinipilit natin na lahat ng hahanap sa motion ay pumunta sa framer-motion
       'motion/react': 'framer-motion',
-      'motion': 'framer-motion'
+      'motion': 'framer-motion',
+      'qrcode.react': 'qrcode.react' // Siguraduhin na mahanap ang QR code
     },
   },
   build: {
-    // Para hindi mag-fail ang build kahit may maliliit na warning
-    chunkSizeWarningLimit: 1600,
-  }
+    rollupOptions: {
+      external: [], // Huwag i-externalize ang qrcode
+    },
+    commonjsOptions: {
+      include: [/qrcode.react/, /node_modules/],
+    },
+  },
 });
