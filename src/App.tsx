@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import MemberPortal from './pages/MemberPortal';
 import Shop from './pages/Shop';
 import Classes from './pages/Classes';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function App() {
   const [user, setUser] = useState<User | null>(null);
