@@ -8,11 +8,12 @@
     "start": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
-    "lucide-react": "latest",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "latest",
-    "framer-motion": "latest",
+    "lucide-react": "^0.454.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3",
+    "framer-motion": "^11.11.17",
+    "qrcode.react": "^4.2.0",
     "stripe": "latest",
     "firebase": "latest",
     "clsx": "latest",
@@ -20,9 +21,11 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
-    "@vitejs/plugin-react": "latest",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "tailwindcss": "^4.0.0",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "^6.0.0"
   }
 }
